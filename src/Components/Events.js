@@ -6,7 +6,7 @@ const Events = () => {
   const [events, setEvents] = useState(null);
 
   useEffect(() => {
-    fetch('https://jsonbin.io/app/bins/66a64a05ad19ca34f88df73f')
+    fetch('https://renesambou.github.io/blogdb/db.json')
     .then(res => {
       return res.json();
     })

@@ -16,7 +16,7 @@ const EventDetails = () => {
     data: event,
     error,
     isPending,
-  } = useFetch('https://jsonbin.io/app/bins/66a64a05ad19ca34f88df73f' + id);
+  } = useFetch('https://renesambou.github.io/blogdb/db.json' + id);
 
   const style = {
     width: '25%',

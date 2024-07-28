@@ -18,7 +18,7 @@ const AddEvent = () => {
 
 
         setIsPending(true);
-        fetch('https://jsonbin.io/app/bins/66a64a05ad19ca34f88df73f', {
+        fetch('https://renesambou.github.io/blogdb/db.json', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(event)
