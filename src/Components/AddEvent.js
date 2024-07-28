@@ -18,7 +18,7 @@ const AddEvent = () => {
 
 
         setIsPending(true);
-        fetch('http://localhost:8001/events', {
+        fetch('https://jsonbin.io/app/bins/66a6472bacd3cb34a86c713f', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(event)

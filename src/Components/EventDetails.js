@@ -16,7 +16,7 @@ const EventDetails = () => {
     data: event,
     error,
     isPending,
-  } = useFetch('http://localhost:8001/events/' + id);
+  } = useFetch('https://jsonbin.io/app/bins/66a6472bacd3cb34a86c713f' + id);
 
   const style = {
     width: '25%',
