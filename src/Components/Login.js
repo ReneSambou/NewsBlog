@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault();
   
     // Load user data from JSON file
-    const response = await axios.get('http://localhost:8000/user');
+    const response = await axios.get('https://jsonbin.io/app/bins/66a6470de41b4d34e418386b');
     const users = response.data;
   
     // Check if the entered username and password match any user data
