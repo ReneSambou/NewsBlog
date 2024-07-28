@@ -22,7 +22,7 @@ function Register() {
 
     try {
       // Check if username (id) already exists
-      const response = await fetch(`https://jsonbin.io/app/bins/66a6470de41b4d34e418386b/${id}`);
+      const response = await fetch(`https://jsonbin.io/app/bins/66a649e8e41b4d34e4183950/${id}`);
       if (response.ok) {
         // Username already exists
         toast.error('Username already exists');
@@ -31,7 +31,7 @@ function Register() {
 
       // Proceed with registration
       const reg = { id, password };
-      const registerResponse = await fetch('https://jsonbin.io/app/bins/66a6470de41b4d34e418386b', {
+      const registerResponse = await fetch('https://jsonbin.io/app/bins/66a649e8e41b4d34e4183950', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reg),
