@@ -58,16 +58,16 @@ const EventDetails = () => {
           <p style={textstyle}>{event.date}</p>
           <div>{event.description}</div>
           <div className="shareButtons">
-            <FacebookShareButton url={`${window.location.origin}/event/${id}`} quote={event.title}>
+            <FacebookShareButton url={`${window.location.origin}/Events/${id}`} quote={event.title}>
               <FacebookIcon size={32} round />
             </FacebookShareButton>
-            <TwitterShareButton url={`${window.location.origin}/event/${id}`} title={event.title}>
+            <TwitterShareButton url={`${window.location.origin}/Events/${id}`} title={event.title}>
               <TwitterIcon size={32} round />
             </TwitterShareButton>
-            <LinkedinShareButton url={`${window.location.origin}/event/${id}`} title={event.title} summary={event.description}>
+            <LinkedinShareButton url={`${window.location.origin}/Events/${id}`} title={event.title} summary={event.description}>
               <LinkedinIcon size={32} round />
             </LinkedinShareButton>
-            <WhatsappShareButton url={`${window.location.origin}/event/${id}`} title={event.title}>
+            <WhatsappShareButton url={`${window.location.origin}/Events/${id}`} title={event.title}>
               <WhatsappIcon size={32} round />
             </WhatsappShareButton>
           </div>
