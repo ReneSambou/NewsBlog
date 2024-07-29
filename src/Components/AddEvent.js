@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { database,  } from "../firebaseConfig";
 import { ref, set, push } from "firebase/database";
-import { Link } from 'react-router-dom';
 import Lottie from 'lottie-react';
 import animationData from '../Components/Assets/event.json';
 

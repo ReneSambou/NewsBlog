@@ -5,7 +5,7 @@ import Lottie from 'lottie-react';
 import animationData from '../Components/Assets/login.json';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { doSignInWithEmailAndPassWord, doSigninWithGoogle } from '../Auth';
+import { doSignInWithEmailAndPassWord,  } from '../Auth';
 
 function Login() {
     const [email, setEmail] = useState('');
