@@ -1,19 +1,25 @@
-import { useState, useEffect } from "react";
 import EventList from "./EventList";
+import { useState, useEffect } from "react";
+import { database } from "../firebaseConfig";
+import { ref, onValue } from "firebase/database";
 
 const Events = () => {
+    const [events, setEvents] = useState([]);
 
-  const [events, setEvents] = useState(null);
+    useEffect(() => {
+        const eventsRef = ref(database, "blog/news");
+        onValue(eventsRef, (snapshot) => {
+            const data = snapshot.val();
+            if (data) {
+                const eventsArray = Object.entries(data).map(([key, value]) => ({
+                    id: key,
+                    ...value
+                }));
+                setEvents(eventsArray);
+            }
+        });
+    }, []);
 
-  useEffect(() => {
-    fetch('https://renesambou.github.io/blogdb/db.json')
-    .then(res => {
-      return res.json();
-    })
-    .then(data => {
-      setEvents(data);
-    });
-  }, [])
   return (
     <>
     <h2>All Blogs</h2>
