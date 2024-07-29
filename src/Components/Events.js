@@ -15,7 +15,7 @@ const Events = () => {
                     id: key,
                     ...value
                 }));
-                setEvents(eventsArray);
+                setEvents(eventsArray.reverse());
             }
         });
     }, []);
