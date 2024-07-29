@@ -62,7 +62,7 @@ const AddEvent = () => {
                     <input type="date" required value={date} onChange={(e) => setDate(e.target.value)} />
 
                     {!isPending && <button>Publish</button>}
-                    {isPending && <button disabled>Adding Event</button>}
+                    {isPending && <button disabled>Adding Article</button>}
                 </form>
             </div>
         </div>
